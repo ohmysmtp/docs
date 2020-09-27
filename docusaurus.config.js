@@ -1,7 +1,7 @@
 module.exports = {
   title: 'OhMySMTP Documentation',
   tagline: 'Transactional email made easy',
-  url: 'https://wonderful-blackwell-4cd5f8.netlify.com',
+  url: 'https://docs.ohmysmtp.com',
   baseUrl: '/',
   favicon: 'img/favicon.ico',
   organizationName: 'OhMySMTP', // Usually your GitHub org/user name.
