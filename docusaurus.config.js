@@ -16,6 +16,11 @@ module.exports = {
       },
       items: [
         {
+          to: 'https://blog.ohmysmtp.com',
+          label: 'Blog',
+          position: 'left',
+        },
+        {
           to: '/',
           activeBasePath: 'overview',
           label: 'Overview',
