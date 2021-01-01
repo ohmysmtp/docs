@@ -9,6 +9,7 @@ module.exports = {
       'reference/responses'
     ],
     // "User Guide": ['guide/bounces', 'guide/blocklist', 'guide/verification'],
-    Integrations: ['integrations/rails']
+    "Ruby on Rails": ['integrations/rails'],
+    NodeJS: require('./typedoc-sidebar.js')
   }
 };
