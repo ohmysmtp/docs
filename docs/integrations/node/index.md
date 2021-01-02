@@ -1,6 +1,6 @@
 ---
 id: "index"
-title: "ohmysmtp.js"
+title: "@ohmysmtp/ohmysmtp.js"
 slug: "/integrations/node"
 sidebar_label: "Readme"
 hide_title: true
@@ -25,16 +25,16 @@ Your domain must have completed DKIM authorization and have an active plan to se
 
 If using NPM
 
-`npm install --save ohmysmtp.js`
+`npm install --save @ohmysmtp/ohmysmtp.js`
 
 If using Yarn
 
-`yarn add ohmysmtp.js`
+`yarn add @ohmysmtp/ohmysmtp.js`
 
 ### Sending an email
 
 ```javascript
-const OhMySMTP = require('ohmysmtp.js');
+const OhMySMTP = require('@ohmysmtp/ohmysmtp.js');
 const client = new OhMySMTP.DomainClient('API_TOKEN_HERE');
 
 client

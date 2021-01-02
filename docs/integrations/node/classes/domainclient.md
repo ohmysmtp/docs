@@ -29,7 +29,7 @@ Name | Type | Description |
 
 **Returns:** [*DomainClient*](domainclient.md)
 
-Defined in: [DomainClient.ts:10](https://github.com/ohmysmtp/ohmysmtp.js/blob/613f020/src/lib/DomainClient.ts#L10)
+Defined in: [DomainClient.ts:10](https://github.com/ohmysmtp/ohmysmtp.js/blob/84ad867/src/lib/DomainClient.ts#L10)
 
 ## Properties
 
@@ -37,7 +37,7 @@ Defined in: [DomainClient.ts:10](https://github.com/ohmysmtp/ohmysmtp.js/blob/61
 
 • `Readonly` **clientVersion**: *string*
 
-Defined in: [BaseClient.ts:22](https://github.com/ohmysmtp/ohmysmtp.js/blob/613f020/src/lib/BaseClient.ts#L22)
+Defined in: [BaseClient.ts:22](https://github.com/ohmysmtp/ohmysmtp.js/blob/84ad867/src/lib/BaseClient.ts#L22)
 
 ___
 
@@ -45,7 +45,7 @@ ___
 
 • `Protected` `Readonly` **errorHandler**: *ErrorHandler*
 
-Defined in: [BaseClient.ts:24](https://github.com/ohmysmtp/ohmysmtp.js/blob/613f020/src/lib/BaseClient.ts#L24)
+Defined in: [BaseClient.ts:24](https://github.com/ohmysmtp/ohmysmtp.js/blob/84ad867/src/lib/BaseClient.ts#L24)
 
 ___
 
@@ -53,7 +53,7 @@ ___
 
 • `Readonly` **httpClient**: AxiosInstance
 
-Defined in: [BaseClient.ts:23](https://github.com/ohmysmtp/ohmysmtp.js/blob/613f020/src/lib/BaseClient.ts#L23)
+Defined in: [BaseClient.ts:23](https://github.com/ohmysmtp/ohmysmtp.js/blob/84ad867/src/lib/BaseClient.ts#L23)
 
 ___
 
@@ -63,7 +63,7 @@ ___
 
 Default options
 
-Defined in: [BaseClient.ts:17](https://github.com/ohmysmtp/ohmysmtp.js/blob/613f020/src/lib/BaseClient.ts#L17)
+Defined in: [BaseClient.ts:17](https://github.com/ohmysmtp/ohmysmtp.js/blob/84ad867/src/lib/BaseClient.ts#L17)
 
 ## Methods
 
@@ -73,7 +73,7 @@ Defined in: [BaseClient.ts:17](https://github.com/ohmysmtp/ohmysmtp.js/blob/613f
 
 **Returns:** *Configuration*
 
-Defined in: [BaseClient.ts:42](https://github.com/ohmysmtp/ohmysmtp.js/blob/613f020/src/lib/BaseClient.ts#L42)
+Defined in: [BaseClient.ts:42](https://github.com/ohmysmtp/ohmysmtp.js/blob/84ad867/src/lib/BaseClient.ts#L42)
 
 ___
 
@@ -85,7 +85,7 @@ Prepare the default HTTP Request Headers
 
 **Returns:** *object*
 
-Defined in: [BaseClient.ts:49](https://github.com/ohmysmtp/ohmysmtp.js/blob/613f020/src/lib/BaseClient.ts#L49)
+Defined in: [BaseClient.ts:49](https://github.com/ohmysmtp/ohmysmtp.js/blob/84ad867/src/lib/BaseClient.ts#L49)
 
 ___
 
@@ -114,7 +114,7 @@ Name | Type |
 
 **Returns:** *Promise*<T\>
 
-Defined in: [BaseClient.ts:63](https://github.com/ohmysmtp/ohmysmtp.js/blob/613f020/src/lib/BaseClient.ts#L63)
+Defined in: [BaseClient.ts:63](https://github.com/ohmysmtp/ohmysmtp.js/blob/84ad867/src/lib/BaseClient.ts#L63)
 
 ___
 
@@ -135,4 +135,4 @@ Name | Type | Description |
 
 A promise that will resolve when the API responds (or an error occurs)
 
-Defined in: [DomainClient.ts:27](https://github.com/ohmysmtp/ohmysmtp.js/blob/613f020/src/lib/DomainClient.ts#L27)
+Defined in: [DomainClient.ts:27](https://github.com/ohmysmtp/ohmysmtp.js/blob/84ad867/src/lib/DomainClient.ts#L27)

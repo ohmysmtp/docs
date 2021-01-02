@@ -1,6 +1,6 @@
 ---
 id: "modules"
-title: "ohmysmtp.js"
+title: "@ohmysmtp/ohmysmtp.js"
 sidebar_label: "Index"
 ---
 
