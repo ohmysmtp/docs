@@ -6,7 +6,7 @@ sidebar_label: Send
 
 ## The Send Endpoint
 
-The `/send` endpoint is the main API endpoint for sending messages through OhMySMTP. It accepts up to 50 emails in the `To` address field.
+The `/send` endpoint is the main API endpoint for sending messages through OhMySMTP
 
 ## Send an email
 
@@ -16,6 +16,10 @@ The `/send` endpoint is the main API endpoint for sending messages through OhMyS
 
 *Only HTTPS is supported*
 
+### Limitations
+
+- You can send to up 50 email addresses in one go in the `To` address fields
+- The endpoint supports a total email size of 50 MB
 
 ### Headers
 
