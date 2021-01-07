@@ -15,9 +15,9 @@ You must complete the following within https://app.ohmysmtp.com:
 
 After following the [onboarding steps](https://app.ohmysmtp.com/onboarding) all of these steps should be complete
 
-## Sending an email
+## Sending an email with the HTTPS API
 
-The OhMySMTP is an HTTP API, to send an email you just need to call the [/send endpoint](../reference/send) with a standard HTTP POST request containing the [authentication token](../reference/authentication), [required headers](../reference/headers) and your email
+The OhMySMTP has an easy to use HTTPS API, to send an email you just need to call the [/send endpoint](../reference/send) with a standard HTTP POST request containing the [authentication token](../reference/authentication), [required headers](../reference/headers) and your email
 
 The send endpoint is located at
 
@@ -203,4 +203,4 @@ defer resp.Body.Close()
 
 ## The response
 
-The response will come back using HTTP Status codes with a JSON body. If someonething went wrong (i.e. it does not return 200) an error object will be included to explain why. For full details of responses and their meaning see [responses](../reference/responses)
+The response will come back using HTTP Status codes with a JSON body. If something went wrong (i.e. it does not return 200) an error object will be included to explain why. For full details of responses and their meaning see [responses](../reference/responses)

@@ -1,0 +1,28 @@
+---
+id: smtp
+title: Send Email over SMTP
+sidebar_label: Send with SMTP
+---
+
+## Why use SMTP
+
+Many applications and frameworks use the Simple Mail Transfer Protocol (SMTP) to send emails directly to other SMTP. In fact, SMTP is used under the hood for almost all emails and was first defined in 1982! So it's safe to say it's a stable and powerful way to send emails.
+
+You may be able to send emails from an existing application by simply changing to our configuration settings below. However, SMTP is a chatty protocol (literally, our SMTP server responds with "Nice to meet you"!) - and as a result it's a slower way to send an email. So if you can, use our HTTPS API to ensure your emails get there quickly.
+
+If you do need to use SMTP (e.g. to migrate an application with making any code changes), read on for instructions.
+
+## SMTP Configuration
+
+Find your application's SMTP configuration settings and use the following options:
+
+
+| Option      | Setting    | Details |
+| :------------- | :---------- |  :------ |
+| SMTP Server | ```smtp.ohmysmtp.com``` | Sometimes called Host Address or similar |
+| SMTP Port | `25`, `587`, or `2525` | It doesn't matter which one you pick |
+| Encryption | `TLS` | No encryption will work but it is not recommended. If this setting is unavailable, that's fine |
+| Username | `Your API token` | API tokens can be found under the "API Tokens" menu of a each Domain, there is one unique API token for every domain | 
+| Password | `Your API token` | API tokens can be found under the "API Tokens" menu of a each Domain, there is one unique API token for every domain | 
+
+That's all you need. You can continue sending emails through your application's standard email interface and emails sent over SMTP will appear on your dashboard.
