@@ -21,7 +21,8 @@ Find your application's SMTP configuration settings and use the following option
 | :------------- | :---------- |  :------ |
 | SMTP Server | ```smtp.ohmysmtp.com``` | Sometimes called Host Address or similar |
 | SMTP Port | `25`, `587`, or `2525` | It doesn't matter which one you pick |
-| Encryption | `TLS` | No encryption will work but it is not recommended. If this setting is unavailable, that's fine |
+| Encryption | `TLS` or `STARTTLS` | No encryption or other options will work but it is not recommended. If this setting is unavailable, that's fine |
+| Authentication | `PLAIN` or `LOGIN` | You may only have an option to enable this without any choices, in that case it will work fine |
 | Username | `Your API token` | API tokens can be found under the "API Tokens" menu of a each Domain, there is one unique API token for every domain | 
 | Password | `Your API token` | API tokens can be found under the "API Tokens" menu of a each Domain, there is one unique API token for every domain | 
 
