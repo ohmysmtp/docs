@@ -61,7 +61,19 @@ module.exports = {
     },
     prism: {
       additionalLanguages: ['ruby'],
-    },    
+    },
+    algolia: {
+      apiKey: '3dbd641280f348f2d4f3d3370b676dfe',
+      indexName: 'ohmysmtp',
+
+      // Optional: see doc section bellow
+      contextualSearch: false,
+
+      // Optional: Algolia search parameters
+      searchParameters: {},
+
+      //... other Algolia params
+    }
   },
   presets: [
     [
