@@ -41,3 +41,28 @@ The `/send` endpoint is the main API endpoint for sending messages through OhMyS
 | bcc | string | `example@domain.com` | Must be an email address |  *Optional* |
 | subject | string | `Email Subject` |  |  *Optional* |
 | replyto | string | `example@domain.com` |  |  *Optional* |
+| attachments | array of attachment objects (see below) | [ Name: "attachment.jpg", "ContentID": "cid:attachment.jpg", "Content": "abcdefghijek", ContentType": "image/jpeg" ] |  |  *Optional* File types are allow-listed (see below) |
+
+#### Attachments
+
+To send attachments over the API use the following array of objects format as the `attachments` property:
+
+```javascript
+[
+    {
+        Name: "This is what will be displayed to the end user e.g. filename.jpg",
+        ContentID: "optional, used for referencing in the body of the email e.g. cid:name.jpg",
+        Content: "the file, as a base64 encoded string",
+        ContentType: "MIME type e.g. image/jpeg"
+    },
+    { ... }
+]
+```
+
+That the content field (the attachment itself) should be a base64 encoded string. You can easily convert files to base64 strings in most programming languages.
+
+Only the following attachment extensions are supported:
+
+`jpeg`, `jpg`, `png`, `gif`, `txt`, `pdf`, `docx`, `xlsx`, `pptx`, `csv`, `att`,
+
+Files with an extension other than the above will be dropped. If you need to send an attachment type that is not specified in the list above, contact our Support team.
