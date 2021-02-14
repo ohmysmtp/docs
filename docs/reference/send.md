@@ -41,19 +41,19 @@ The `/send` endpoint is the main API endpoint for sending messages through OhMyS
 | bcc | string | `example@domain.com` | Must be an email address |  *Optional* |
 | subject | string | `Email Subject` |  |  *Optional* |
 | replyto | string | `example@domain.com` |  |  *Optional* |
-| attachments | array of attachment objects (see below) | [ Name: "attachment.jpg", "ContentID": "cid:attachment.jpg", "Content": "abcdefghijek", ContentType": "image/jpeg" ] |  |  *Optional* File types are allow-listed (see below) |
+| attachments | array of attachment objects (see below) | [ name: "attachment.jpg", "cid": "cid:attachment.jpg", "content": "abcdefghijek", content_type": "image/jpeg" ] |  |  *Optional* File types are allow-listed (see below) |
 
 #### Attachments
 
-To send attachments over the API use the following array of objects format as the `attachments` property:
+To send attachments over the API use the following format of an array of objects as the `attachments` property:
 
 ```javascript
 [
     {
-        Name: "This is what will be displayed to the end user e.g. filename.jpg",
-        ContentID: "optional, used for referencing in the body of the email e.g. cid:name.jpg",
-        Content: "the file, as a base64 encoded string",
-        ContentType: "MIME type e.g. image/jpeg"
+        name: "This is what will be displayed to the end user. Example: myimage.jpg",
+        content: "The attachment, encoded as a base64 encoded string",
+        content_type: "MIME type. Example: image/jpeg"
+        cid: "Optional, used for embedding inline images. Example: myimage",
     },
     { ... }
 ]
@@ -61,8 +61,10 @@ To send attachments over the API use the following array of objects format as th
 
 That the content field (the attachment itself) should be a base64 encoded string. You can easily convert files to base64 strings in most programming languages.
 
-Only the following attachment extensions are supported:
+Only the following attachment extensions are supported, see [here](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types/Common_types) for their corresponding ContentTypes:
 
-`jpeg`, `jpg`, `png`, `gif`, `txt`, `pdf`, `docx`, `xlsx`, `pptx`, `csv`, `att`,
+`jpeg`, `jpg`, `png`, `gif`, `txt`, `pdf`, `docx`, `xlsx`, `pptx`, `csv`, `att`
 
-Files with an extension other than the above will be dropped. If you need to send an attachment type that is not specified in the list above, contact our Support team.
+Including files with an extension other than the above will return an error. If you need to send an attachment type that is not specified in the list above, contact our Support team.
+
+For unusual file types or large attachments we **strongly recommend using an external service to host files and send a link to those files in the email**. This will be much faster, and tends to be a far more scalable approach.
