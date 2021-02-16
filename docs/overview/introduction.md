@@ -10,7 +10,7 @@ OhMySMTP provides an HTTPS API, SMTP Server and several libraries for sending em
 
 - **OhMySMTP can only be used for Transactional Email**. Sending marketing emails, bulk newsletters or other non-transactional content is strictly prohibited. Contact support if you need more details about whether your email is considered transactional or not
 
-- **Sending attachments are not supported** - this feature is on our backlog and will arrive in a future release
+- **Sending attachments is supported over our HTTPS API** - Rails, Node and SMTP integrations are coming soon!
 
 - **Ownership of your domain must be confirmed** by DKIM verification before any emails can be sent
 
