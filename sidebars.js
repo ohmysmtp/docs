@@ -12,5 +12,7 @@ module.exports = {
     "Ruby on Rails": ['integrations/rails'],
     NodeJS: require('./typedoc-sidebar.js'),
     "SMTP Server": ['integrations/smtp'],
+    Guide: ['guide/lifecycle', 'guide/blocklist'],
+
   }
 };
