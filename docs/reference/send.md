@@ -42,6 +42,8 @@ The `/send` endpoint is the main API endpoint for sending messages through OhMyS
 | subject | string | `Email Subject` |  |  *Optional* |
 | replyto | string | `example@domain.com` |  |  *Optional* |
 | attachments | array of attachment objects (see below) | [ name: "attachment.jpg", "cid": "cid:attachment.jpg", "content": "abcdefghijek", content_type": "image/jpeg" ] |  |  *Optional* File types are allow-listed (see below) |
+| tags | array of tags or a single tag as a string | [ "password reset", "welcome" ] or "welcome" | |  *Optional* |
+
 
 #### Attachments
 
