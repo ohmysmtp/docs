@@ -27,3 +27,17 @@ Find your application's SMTP configuration settings and use the following option
 | Password | `Your API token` | API tokens can be found under the "API Tokens" menu of a each Domain, there is one unique API token for every domain | 
 
 That's all you need. You can continue sending emails through your application's standard email interface and emails sent over SMTP will appear on your dashboard.
+
+## Tags
+
+OhMySMTP supports tagging emails for later categorization and analysis in the UI. To do this over SMTP you need to set a Header on the email, using the email software you're using to send the message. The header name should be `X-OMS-Tags` and the content either a single string or comma separated list of strings, as follows:
+
+```
+X-OMS-Tags: a single tag
+```
+
+or
+
+```
+X-OMS-Tags: tag one, tag two, tag three
+```
