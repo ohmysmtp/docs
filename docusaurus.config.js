@@ -6,6 +6,7 @@ module.exports = {
   favicon: 'img/favicon.ico',
   organizationName: 'OhMySMTP', // Usually your GitHub org/user name.
   projectName: 'OhMySMTP.com', // Usually your repo name.
+  scripts: [{ src: 'https://stats.ohmysmtp.com/js/index.js', async: true, defer: true, 'data-domain': 'docs.ohmysmtp.com' }],
   themeConfig: {
     navbar: {
       title: 'OhMySMTP',
