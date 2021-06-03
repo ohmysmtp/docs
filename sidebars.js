@@ -10,6 +10,7 @@ module.exports = {
         'reference/responses'
       ] },
       { "Ruby on Rails": ['integrations/rails'] },
+      { "PHP": ['integrations/php'] },
       { NodeJS: require('./typedoc-sidebar.js') },
       { "SMTP Server": ['integrations/smtp'] },
     ],
