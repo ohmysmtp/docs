@@ -22,4 +22,5 @@ sidebar_label: Responses
 |  403 | ```{"error:"The organization that owns this domain does not have an active plan"}``` | Each organization must have an active plan to allow emails to be sent |
 |  403 | ```{"error:"Verified domain does not match domain in From address of email"}``` | The From address needs to contain exactly the same domain that you have registered, for example, if the email has a From address of test@test.com, you must be attempting to send using the API token for the test.com address |
 |  406 | ```{"error:"Invalid request format or content type"}``` | Something in your request is invalid, check the (Send Reference Documentation)[send] for details |
+|  429 | ```{"error:"You are sending emails too quickly"}``` | You are being rate limited due to sending too many emails in a short period of time. The application of rate limits varies depending on factors such as organization age, plan, and historical sending patterns. Contact Support if you are experiencing this regularly  |
 |  500 | `No content` | Internal Server Error - our application is down, contact support if this persists |
