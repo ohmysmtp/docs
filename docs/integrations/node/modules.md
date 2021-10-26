@@ -1,11 +1,11 @@
 ---
 id: "modules"
 title: "@ohmysmtp/ohmysmtp.js"
-sidebar_label: "Index"
+sidebar_label: "Exports"
+sidebar_position: 0.5
+custom_edit_url: null
 ---
 
-## Index
+## Classes
 
-### Classes
-
-* [DomainClient](classes/domainclient.md)
+- [DomainClient](classes/DomainClient)
