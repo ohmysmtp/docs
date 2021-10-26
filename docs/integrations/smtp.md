@@ -41,3 +41,11 @@ or
 ```
 X-OMS-Tags: tag one, tag two, tag three
 ```
+
+## List-Unsubscribe
+
+OhMySMTP supports adding a `List-Unsubscribe` header to emails to allow mail clients to display an Unsubscribe link in the client. To include the header, supply the URI and/or mailto details as a header named `X-List-Unsubscribe`
+
+```
+X-List-Unsubscribe: <http://www.host.com/list.cgi?cmd=unsub&lst=list>, <mailto:list-request@host.com?subject=unsubscribe>
+```
