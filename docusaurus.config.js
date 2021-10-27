@@ -93,16 +93,5 @@ module.exports = {
       },
     ],
   ],
-  plugins: [
-    [
-      'docusaurus-plugin-typedoc',
-
-      // Plugin / TypeDoc options (see typedoc --help)
-      {
-        entryPoints: ['../ohmysmtp.js/src/index.ts'],
-        tsconfig: '../ohmysmtp.js/tsconfig.json',
-        out: 'integrations/node'
-      },
-    ],
-  ],
+  plugins: [],
 };

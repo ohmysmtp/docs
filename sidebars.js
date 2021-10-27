@@ -10,8 +10,8 @@ module.exports = {
         'reference/responses'
       ] },
       { "Ruby on Rails": ['integrations/rails'] },
+      { "Node.js": ['integrations/node'] },
       { "PHP": ['integrations/php'] },
-      { NodeJS: require('./typedoc-sidebar.js') },
       { "SMTP Server": ['integrations/smtp'] },
     ],
     Guide: ['guide/lifecycle', 'guide/blocklist'],
