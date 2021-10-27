@@ -84,7 +84,6 @@ module.exports = {
           sidebarPath: require.resolve('./sidebars.js'),
           editUrl:
             'https://github.com/ohmysmtp/docs/edit/master/',
-          homePageId: 'overview/introduction',
           routeBasePath: '/'
         },
         theme: {
