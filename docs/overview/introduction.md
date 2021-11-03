@@ -19,7 +19,7 @@ OhMySMTP provides an HTTPS API, SMTP Server and several libraries for sending em
 
 - **Static IP addresses are not available**, our IP addresses are shared by other customers to maximise delivery rates and decrease time to inbox
 
-- **Additional SPF configuration is not required**, we use the return path header of the email to ensure all SPF checks pass
+- **Additional SPF and DMARC configuration is optional**, we use the return path header of the email to ensure all SPF checks pass without this, but you can enable these in the [verification](../guide/verification.md) section if required
 
 - **Only HTTPS is supported**, HTTP without encryption is insecure and we just don't support it  
 

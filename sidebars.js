@@ -14,6 +14,6 @@ module.exports = {
       { "PHP": ['integrations/php'] },
       { "SMTP Server": ['integrations/smtp'] },
     ],
-    Guide: ['guide/lifecycle', 'guide/blocklist'],
+    Guide: ['guide/lifecycle', 'guide/blocklist', 'guide/verification'],
   }
 };
