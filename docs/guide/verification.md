@@ -18,7 +18,7 @@ To improve deliverability rates you can enable [DMARC validation](https://en.wik
 Adjusting DMARC, CNAME and SPF policies for your domain can introduce side effects on other email services using the same domain. If you are unsure of the impacts, contact our support team and we'll be happy to guide you through the setup process
 :::
 
-When you complete the Advanced Verification steps (three additional DNS records) on your `Domain -> Verification` page, a Custom Return-Path will be enabled for your domain. This means your emails will have a Return-Path which looks like this:
+When you complete the Advanced Verification steps (two additional DNS records) on your `Domain -> Verification` page, a Custom Return-Path will be enabled for your domain. This means your emails will have a Return-Path which looks like this:
 
 ```
 bounces+<message-id>@mailer.<domain>
