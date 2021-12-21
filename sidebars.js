@@ -13,9 +13,17 @@ module.exports = {
       },
       { "Ruby on Rails": ['integrations/rails'] },
       { "Node.js": ['integrations/node'] },
-      { "PHP": ['integrations/php'] },
+      { 
+        "PHP": [
+          'integrations/php/swiftmailer',
+          'integrations/php/symfony',
+        ]
+      },
+      { "Go": ['integrations/go'] },
+      { "Rust": ['integrations/rust'] },
       { "SMTP Server": ['integrations/smtp'] },
+
     ],
-    Guide: ['guide/lifecycle', 'guide/blocklist', 'guide/verification', 'guide/webhooks'],
+    Guide: ['guide/lifecycle', 'guide/blocklist', 'guide/verification', 'guide/webhooks', 'guide/inbound'],
   }
 };

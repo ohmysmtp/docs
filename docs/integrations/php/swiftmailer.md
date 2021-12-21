@@ -1,7 +1,7 @@
 ---
-id: php
-title: PHP (Swiftmailer) Package
-sidebar_label: PHP Package
+id: swiftmailer
+title: Swiftmailer Package
+sidebar_label: Swiftmailer
 ---
 
 ## Overview
