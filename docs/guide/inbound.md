@@ -14,7 +14,7 @@ Our inbound email works by catching all emails addressed to the `inbound` subdom
 
 All plans come with unlimited domains, so if the `inbound` subdomain is unavailable on your domain, you can always create another subdomain and use that (e.g. `emails.inbound.test.com`).
 
-We will attempt to send to your endpoint five times with a increasing gap in between each send, after which we will declare it as failed and will not try again.
+We will attempt to send to your endpoint five times with an increasing gap in between each send, after which we will declare the email as failed and will not try again.
 
 :::caution
 Your domain must have passed DKIM verification and your organization must have an active plan to accept inbound emails
