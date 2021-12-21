@@ -11,18 +11,18 @@ module.exports = {
           'reference/responses'
         ]
       },
-      { "Ruby on Rails": ['integrations/rails'] },
-      { "Node.js": ['integrations/node'] },
+      'integrations/smtp',
+      'integrations/rails',
+      'integrations/node',
       { 
         "PHP": [
           'integrations/php/swiftmailer',
           'integrations/php/symfony',
         ]
       },
-      { "Go": ['integrations/go'] },
-      { "Rust": ['integrations/rust'] },
-      { "SMTP Server": ['integrations/smtp'] },
-
+      'integrations/go',
+      'integrations/rust',
+      "integrations/elixir",
     ],
     Guide: ['guide/lifecycle', 'guide/blocklist', 'guide/verification', 'guide/webhooks', 'guide/inbound'],
   }

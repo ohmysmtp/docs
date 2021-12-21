@@ -1,7 +1,7 @@
 ---
 id: node
 title: Node.js / JavaScript / Typescript Library
-sidebar_label: Node.js Library
+sidebar_label: Node.js
 ---
 
 ## Overview

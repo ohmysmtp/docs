@@ -1,7 +1,7 @@
 ---
 id: smtp
 title: Send Email over SMTP
-sidebar_label: Send with SMTP
+sidebar_label: Send
 ---
 
 ## Why use SMTP

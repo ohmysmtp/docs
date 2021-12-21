@@ -1,7 +1,7 @@
 ---
 id: rails
 title: Rails Gem
-sidebar_label: Rails Gem
+sidebar_label: Ruby on Rails
 ---
 
 ## Overview
