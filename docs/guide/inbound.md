@@ -69,8 +69,7 @@ Attachments are sent as an array, in the following structure:
 | contentType | MIME type of the message | Required | string | `text/plain` | 
 | contentDisposition | Content disposition type for the attachment | Required | string | `attachment` |
 | filename | File name of the attachment, if provided | Optional | string | `image.png` | 
-| headers | 
-| headerLines | 
+| headers | Headers for the attachment | Required | Array of strings | `[Header: content, ...]`
 | checksum | An MD5 hash of the attachment content | Required | string | `abc` |
 | size | Message size in bytes | Required |  number | `123`
 | contentId | The header value from `Content-ID` | Optional | string | `<abc>` |
