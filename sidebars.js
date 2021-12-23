@@ -23,6 +23,7 @@ module.exports = {
       'integrations/go',
       'integrations/rust',
       "integrations/elixir",
+      'integrations/fastify',
     ],
     Guide: ['guide/lifecycle', 'guide/blocklist', 'guide/verification', 'guide/webhooks', 'guide/inbound'],
   }
