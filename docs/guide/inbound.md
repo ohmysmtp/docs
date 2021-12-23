@@ -44,6 +44,7 @@ Emails are sent as HTTP POST requests with a JSON body containing the following 
 | from | Required | string | `Person A <person_a@test.com>` |
 | headers | Required | Array of strings | `["Received: from localhost...", "DKIM-Signature: v=1 a=rsa...;]`
 | messageId | Required | string | `<3baf4caf-948a-41e6-bc5c-2e99058e6461@mailer.ohmysmtp.com>` |
+| raw | Required | string | The full raw email as described in RFC 822 |
 | to | Optional | string | `Person B <person_b@test.com>` |
 | subject | Optional | string | `Email Subject` |
 | cc | Optional | string | `Person C <person_C@test.com>` |
@@ -52,6 +53,7 @@ Emails are sent as HTTP POST requests with a JSON body containing the following 
 | replyTo | Optional | string | `bounces+abcd@test.com` |
 | html | Optional | string |  `<h1>Email Contents Here</h1>` |
 | text | Optional | string |  `Text Email Contents` |
+
 | attachments | Optional | Array of Attachments | See [Attachments](#attachments) |
 
 *Properties that are marked as Optional may not appear as a parameter in the body*
