@@ -4,10 +4,6 @@ title: Receiving Inbound Emails
 sidebar_label: Inbound
 ---
 
-:::caution
-Inbound email support is currently in Beta, and we'd love to get your feedback on it: support@ohmysmtp.com
-:::
-
 ## Overview
 
 Our inbound email works by catching all emails addressed to the `inbound` subdomain of your domain. For example if your domain is `test.com`, any emails sent to `*@inbound.test.com` will be handled. We then POST all emails onto a webhook address of your choice, defined on the `inbound_emails` page in our application.
