@@ -38,8 +38,8 @@ The `/send` endpoint is the main API endpoint for sending messages through OhMyS
 | to | string | `example@domain.com` <br /> <br /> `Full Name <example@domain.com>` <br /> <br /> `example@domain.com, example2@domain.com, Full Name <example3@domain.com>` | Must be an email address, name & addr-spec as specified in https://tools.ietf.org/html/rfc822 or a comma separated list of email addresses |  **Required** |
 | htmlbody | string | `<html><body><p>Content</p></body></html>` | Enclosing html tags are optional |  **Required if textbody not supplied** |
 | textbody | string | `Content` |  |  **Required if htmlbody not supplied** |
-| cc | string | `example@domain.com` | Must be an email address |  *Optional* |
-| bcc | string | `example@domain.com` | Must be an email address |  *Optional* |
+| cc | string | `example@domain.com` <br /> <br /> `Full Name <example@domain.com>` <br /> <br /> `example@domain.com, example2@domain.com, Full Name <example3@domain.com>` | Must be an email address, name & addr-spec as specified in https://tools.ietf.org/html/rfc822, or a comma separated list of email addresses |  *Optional* |
+| bcc | string | `example@domain.com` <br /> <br /> `Full Name <example@domain.com>` <br /> <br /> `example@domain.com, example2@domain.com, Full Name <example3@domain.com>` | Must be an email address, name & addr-spec as specified in https://tools.ietf.org/html/rfc822, or a comma separated list of email addresses |  *Optional* |
 | subject | string | `Email Subject` |  |  *Optional* |
 | replyto | string | `example@domain.com` |  |  *Optional* |
 | list_unsubscribe | string | `<mailto:list@host.com?subject=unsubscribe>`<br /> <br />`<http://www.host.com/list.cgi?cmd=unsub&lst=list>, <mailto:list-request@host.com?subject=unsubscribe>`|  |  *Optional* |

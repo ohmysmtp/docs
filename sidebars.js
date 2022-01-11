@@ -25,6 +25,6 @@ module.exports = {
       "integrations/elixir",
       'integrations/fastify',
     ],
-    Guide: ['guide/lifecycle', 'guide/blocklist', 'guide/verification', 'guide/webhooks', 'guide/inbound'],
+    Guides: ['guide/lifecycle', 'guide/blocklist', 'guide/verification', 'guide/webhooks', 'guide/inbound'],
   }
 };
