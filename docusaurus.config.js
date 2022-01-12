@@ -64,7 +64,8 @@ module.exports = {
       additionalLanguages: ['ruby'],
     },
     algolia: {
-      apiKey: '3dbd641280f348f2d4f3d3370b676dfe',
+      appId: 'DDZLB5QA5I',
+      apiKey: '6e7c8f1964c37bfa72a1904c105c1f84',
       indexName: 'ohmysmtp',
 
       // Optional: see doc section bellow
