@@ -10,7 +10,7 @@ To set this up, open the Webhooks section of your Domain. Here you can add or re
 
 > Note that endpoint URLs must use TLS/SSL, and start with `https://`
 
-Webhooks are sent as JSON POST requests, with a Content-Type of `application/json`
+Webhooks are sent as JSON POST requests, with a Content-Type of `application/json`, and are signed using an Ed25519 signature available in the `Oms-Signature` header key.
 
 ## Events
 
@@ -75,4 +75,36 @@ All webhook event bodies have two properties:
         "list_unsubscribe": "string"
     }
 }
+```
+
+## Verification
+
+For added security we sign all webhook requests with an [Ed25519](https://datatracker.ietf.org/doc/html/rfc8032) keypair and place the signature of the webhook body into the request headers, under the header name `Oms-Signature`.
+
+You can validate this signature using the public key available in the `Webhooks -> Public Key Verification` section of your Domain at https://app.ohmysmtp.com. Note that each domain has a different keypair.
+
+This is useful to ensure that all received webhooks have come from the OhMySMTP servers and have not been tampered with. Only we have the private key to sign requests, so if the request body verifies successfully you know we have sent it.
+
+:::caution 
+Both the key and signature are a byte string that has been Base64 encoded, using strict_encode. You will need to decode both key and signature to the byte string before verifying (as shown in the examples below). We do this to make sending the signature and key over HTTPS easier and less error-prone.
+:::
+
+### Examples
+
+#### Ruby
+
+```ruby
+require "ed25519"
+
+# Assuming you have the headers available in a headers array
+signature_base64 = headers["Oms-Signature"]
+signature = Base64.strict_decode64(signature_base_64)
+
+verify_key_base64 = "Your Public Key from app.ohmysmtp.com here"
+verify_key = Ed25519::VerifyKey.new(Base64.strict_decode64(verify_key_base64))
+
+# Assuming the full body of the request is available under a request object
+message = request.raw_post
+
+verify_key.verify(signature, message) # True if verification passed!
 ```
