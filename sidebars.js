@@ -1,7 +1,15 @@
 module.exports = {
-  overview: {
-    Overview: ['overview/introduction', 'overview/firstEmail'],
-    Integrations: [
+  overview: [{
+    type: "category",
+    label: "Overview",
+    items: ['overview/introduction', 'overview/firstEmail'],
+    collapsed: false
+  },
+  {
+    type: "category",
+    label: "Integrations",
+    collapsed: false,
+    items: [
       {
         "HTTP API": [
           'reference/overview',
@@ -13,18 +21,32 @@ module.exports = {
       },
       'integrations/smtp',
       'integrations/rails',
-      'integrations/node',
-      { 
+      {
+        "JavaScript": [
+          'integrations/javascript/node',
+          'integrations/javascript/fastify',
+        ]
+      },
+      {
         "PHP": [
           'integrations/php/swiftmailer',
           'integrations/php/symfony',
         ]
       },
+      {
+        "Erlang": [
+          "integrations/erlang/swoosh",
+          "integrations/erlang/elixir",
+        ]
+      },
       'integrations/go',
       'integrations/rust',
-      "integrations/elixir",
-      'integrations/fastify',
-    ],
-    Guides: ['guide/lifecycle', 'guide/blocklist', 'guide/verification', 'guide/webhooks', 'guide/inbound'],
-  }
+    ]
+  },
+  {
+    type: "category",
+    label: "Guides",
+    collapsed: false,
+    items: ['guide/lifecycle', 'guide/blocklist', 'guide/verification', 'guide/webhooks', 'guide/inbound']
+  }]
 };

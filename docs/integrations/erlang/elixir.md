@@ -1,7 +1,7 @@
 ---
 id: elixir
-title: Elixir (Erlang)
-sidebar_label: Elixir (Erlang)
+title: Elixir
+sidebar_label: Elixir
 ---
 
 
