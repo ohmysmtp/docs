@@ -1,6 +1,6 @@
 # Introduction
 
-This is the documentation for [OhMySMTP](https://ohmysmtp.com/), an API for sending transactional emails.
+This is the documentation for [MailPace](https://mailpace.com/), an API for sending transactional emails.
 
 The documentation is built using [Docusaurus 2](https://v2.docusaurus.io/), a modern static website generator.
 

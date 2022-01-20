@@ -6,22 +6,22 @@ sidebar_label: Send your first email
 
 ## Prerequisites
 
-You must complete the following within https://app.ohmysmtp.com:
+You must complete the following within https://app.mailpace.com:
 
 - Create an Organization
 - Create a Domain
 - Verify the domain
 - Sign up to a Plan
 
-After following the [onboarding steps](https://app.ohmysmtp.com/onboarding) all of these steps should be complete
+After following the [onboarding steps](https://app.mailpace.com/onboarding) all of these steps should be complete
 
 ## Sending an email with the HTTPS API
 
-The OhMySMTP has an easy to use HTTPS API, to send an email you just need to call the [/send endpoint](../reference/send) with a standard HTTP POST request containing the [authentication token](../reference/authentication), [required headers](../reference/headers) and your email
+The MailPace has an easy to use HTTPS API, to send an email you just need to call the [/send endpoint](../reference/send) with a standard HTTP POST request containing the [authentication token](../reference/authentication), [required headers](../reference/headers) and your email
 
 The send endpoint is located at
 
-`https://app.ohmysmtp.com/api/v1/send`
+`https://app.mailpace.com/api/v1/send`
 
 ### Examples
 
@@ -45,15 +45,15 @@ import TabItem from '@theme/TabItem';
   <TabItem value="curl">
 
   ```shell
-curl "https://app.ohmysmtp.com/api/v1/send" \
+curl "https://app.mailpace.com/api/v1/send" \
     -X POST \
     -H "Accept: application/json" \
     -H "Content-Type: application/json" \
-    -H "OhMySMTP-Server-Token: API_TOKEN_GOES_HERE" \
+    -H "MailPace-Server-Token: API_TOKEN_GOES_HERE" \
     -d '{
       "from": "example@domain.com",
       "to": "person@somewhere.com",
-      "subject": "Hello from OhMySMTP.com",
+      "subject": "Hello from MailPace.com",
       "textbody": "Hello"
     }'
   ```
@@ -66,18 +66,18 @@ var request = require('request');
 var headers = {
     'Accept': 'application/json',
     'Content-Type': 'application/json',
-    'OhMySMTP-Server-Token': 'API_TOKEN_GOES_HERE'
+    'MailPace-Server-Token': 'API_TOKEN_GOES_HERE'
 };
 
 var dataString = `{
     "from": "example@domain.com",
     "to": "person@somewhere.com",
-    "subject": "Hello from OhMySMTP.com",
+    "subject": "Hello from MailPace.com",
     "textbody": "Hello"
   }`;
 
 var options = {
-    url: 'https://app.ohmysmtp.com/api/v1/send',
+    url: 'https://app.mailpace.com/api/v1/send',
     method: 'POST',
     headers: headers,
     body: dataString
@@ -101,7 +101,7 @@ require 'net/http'
 require 'uri'
 require 'json'
 
-uri = URI.parse('https://app.ohmysmtp.com/api/v1/send')
+uri = URI.parse('https://app.mailpace.com/api/v1/send')
 request = Net::HTTP::Post.new(uri)
 request.content_type = 'application/json'
 request['Accept'] = 'application/json'
@@ -111,7 +111,7 @@ request.body = JSON.dump(
   {
     'from' => 'example@domain.com',
     'to' => 'person@somewhere.com',
-    'subject' => 'Hello from OhMySMTP.com',
+    'subject' => 'Hello from MailPace.com',
     'textbody' => 'Hello'
   }
 )
@@ -135,17 +135,17 @@ import requests
 headers = {
     "Accept": "application/json",
     "Content-Type": "application/json",
-    "OhMySMTP-Server-Token": "API_TOKEN_GOES_HERE"
+    "MailPace-Server-Token": "API_TOKEN_GOES_HERE"
 }
 
 data = {
     "from": "example@domain.com",
     "to": "person@somewhere.com",
-    "subject": "Hello from OhMySMTP.com",
+    "subject": "Hello from MailPace.com",
     "textbody": "Hello"
 }
 
-response = requests.post('https://app.ohmysmtp.com/api/v1/send', headers=headers, data=data)
+response = requests.post('https://app.mailpace.com/api/v1/send', headers=headers, data=data)
 
   ```
 
@@ -172,7 +172,7 @@ type Payload struct {
 data := Payload{
     From: "example@domain.com",
     To: "someone@somewhere.com",
-    Subject:  "Hello from OhMySMTP.com",
+    Subject:  "Hello from MailPace.com",
     Textbody: "Hello",
 }
 payloadBytes, err := json.Marshal(data)
@@ -181,7 +181,7 @@ if err != nil {
 }
 body := bytes.NewReader(payloadBytes)
 
-req, err := http.NewRequest("POST", "https://app.ohmysmtp.com/api/v1/send", body)
+req, err := http.NewRequest("POST", "https://app.mailpace.com/api/v1/send", body)
 if err != nil {
     // handle err
 }

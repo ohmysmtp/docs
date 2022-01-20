@@ -1,23 +1,23 @@
 module.exports = {
-  title: 'OhMySMTP Documentation',
+  title: 'MailPace Documentation',
   tagline: 'Transactional email made easy',
-  url: 'https://docs.ohmysmtp.com',
+  url: 'https://docs.mailpace.com',
   baseUrl: '/',
   favicon: 'img/favicon.ico',
-  organizationName: 'OhMySMTP', // Usually your GitHub org/user name.
-  projectName: 'OhMySMTP.com', // Usually your repo name.
-  scripts: [{ src: 'https://stats.ohmysmtp.com/js/index.js', async: true, defer: true, 'data-domain': 'docs.ohmysmtp.com' }],
+  organizationName: 'MailPace', // Usually your GitHub org/user name.
+  projectName: 'MailPace.com', // Usually your repo name.
+  scripts: [{ src: 'https://stats.mailpace.com/js/index.js', async: true, defer: true, 'data-domain': 'docs.mailpace.com' }],
   themeConfig: {
     navbar: {
-      title: 'OhMySMTP',
+      title: 'MailPace',
       logo: {
-        alt: 'OhMySMTP Logo',
+        alt: 'MailPace Logo',
         src: 'img/logo.png',
         target: '_top'
       },
       items: [
         {
-          to: 'https://blog.ohmysmtp.com',
+          to: 'https://blog.mailpace.com',
           label: 'Blog',
           position: 'left',
         },
@@ -49,16 +49,16 @@ module.exports = {
           items: [
             {
               label: 'Privacy',
-              href: 'https://ohmysmtp.com/privacy',
+              href: 'https://mailpace.com/privacy',
             },
             {
               label: 'Terms of Service',
-              href: 'https://ohmysmtp.com/terms',
+              href: 'https://mailpace.com/terms',
             }
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} OhMySMTP.com`,
+      copyright: `Copyright © ${new Date().getFullYear()} MailPace.com`,
     },
     prism: {
       additionalLanguages: ['ruby'],
@@ -66,7 +66,7 @@ module.exports = {
     algolia: {
       appId: 'DDZLB5QA5I',
       apiKey: '6e7c8f1964c37bfa72a1904c105c1f84',
-      indexName: 'ohmysmtp',
+      indexName: 'mailpace',
 
       // Optional: see doc section bellow
       contextualSearch: false,
@@ -84,7 +84,7 @@ module.exports = {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           editUrl:
-            'https://github.com/ohmysmtp/docs/edit/master/',
+            'https://github.com/mailpace/docs/edit/master/',
           routeBasePath: '/'
         },
         theme: {

@@ -6,7 +6,7 @@ sidebar_label: Headers
 
 ## Required headers
 
-Along with the `OhMySMTP-Server-Token` header documented here: [Authentication Headers](authentication), you must include two other headers:
+Along with the `MailPace-Server-Token` header documented here: [Authentication Headers](authentication), you must include two other headers:
 
 | Header Name     | Contents    | |
 | :------------- | :---------- | :----------- |

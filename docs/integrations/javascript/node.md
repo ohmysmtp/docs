@@ -8,23 +8,23 @@ sidebar_label: Node.js
 
 Our Node.js library is written in Typescript and can be found here:
 
-https://github.com/ohmysmtp/ohmysmtp.js
+https://github.com/mailpace/mailpace.js
 
 ## Installation
 
 If using NPM
 
-`npm install --save @ohmysmtp/ohmysmtp.js`
+`npm install --save @mailpace/mailpace.js`
 
 If using Yarn
 
-`yarn add @ohmysmtp/ohmysmtp.js`
+`yarn add @mailpace/mailpace.js`
 
 ## Sending an email
 
 ```javascript
-const OhMySMTP = require('@ohmysmtp/ohmysmtp.js');
-const client = new OhMySMTP.DomainClient('API_TOKEN_HERE');
+const MailPace = require('@mailpace/mailpace.js');
+const client = new MailPace.DomainClient('API_TOKEN_HERE');
 
 client
   .sendEmail({
@@ -40,4 +40,4 @@ client
 
 ## Further details
 
-See [the ./docs folder](https://github.com/ohmysmtp/ohmysmtp.js/docs) for more documentation and options
+See [the ./docs folder](https://github.com/mailpace/mailpace.js/docs) for more documentation and options

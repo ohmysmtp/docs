@@ -6,7 +6,7 @@ sidebar_label: Verification
 
 ## Basic Verification
 
-In order to send emails with us you must verify ownership of your chosen domain. This will also enable [DKIM signing](https://blog.ohmysmtp.com/blog/whats-a-DKIM-record/) of your emails, which proves that your emails have come from a server with the authority to send emails on your behalf and that they have not been tampered with.
+In order to send emails with us you must verify ownership of your chosen domain. This will also enable [DKIM signing](https://blog.mailpace.com/blog/whats-a-DKIM-record/) of your emails, which proves that your emails have come from a server with the authority to send emails on your behalf and that they have not been tampered with.
 
 You will be guided through DKIM verification during the onboarding process. If you need to re-verify your domain (for example after changing DNS providers), you can complete the process again by accessing the Verification page under your Domain.
 
@@ -26,4 +26,4 @@ bounces+<message-id>@mailer.<domain>
 
 Where `message-id` is set by our email servers and `domain` is your full domain name. With this your `From` address and `Reply-To` addresses will have the same domain, which is required for DMARC validation to pass and is often used as an additional check by spam filters.
 
-Additionally, Because you will also add a CNAME record to `mailer.ohmysmtp.com` as part of this process, any bounce reports will also be redirected to our servers for handling.
+Additionally, Because you will also add a CNAME record to `mailer.mailpace.com` as part of this process, any bounce reports will also be redirected to our servers for handling.

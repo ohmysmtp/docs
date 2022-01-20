@@ -6,13 +6,13 @@ sidebar_label: Send
 
 ## The Send Endpoint
 
-The `/send` endpoint is the main API endpoint for sending messages through OhMySMTP
+The `/send` endpoint is the main API endpoint for sending messages through MailPace
 
 ## Send an email
 
 ### Endpoint address
 
-`https://app.ohmysmtp.com/api/v1/send`
+`https://app.mailpace.com/api/v1/send`
 
 *Only HTTPS is supported*
 
@@ -28,7 +28,7 @@ The `/send` endpoint is the main API endpoint for sending messages through OhMyS
 | :------------- | :---------- | :----------- |
 |  Accept | `application/json` | **Required** |
 |  Content-Type | `application/json` | **Required** |
-|  OhMySMTP-Server-Token | See [authentication](authentication) for details | **Required**  |
+|  MailPace-Server-Token | See [authentication](authentication) for details | **Required**  |
 
 ### Body Parameters
 

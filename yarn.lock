@@ -1596,9 +1596,9 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
-"@ohmysmtp/ohmysmtp.js@^0.0.11":
+"@mailpace/mailpace.js@^0.0.11":
   version "0.0.11"
-  resolved "https://registry.yarnpkg.com/@ohmysmtp/ohmysmtp.js/-/ohmysmtp.js-0.0.11.tgz#709af4ec4dc2fee92b67c7df03ffb6691fae8bb2"
+  resolved "https://registry.yarnpkg.com/@mailpace/mailpace.js/-/mailpace.js-0.0.11.tgz#709af4ec4dc2fee92b67c7df03ffb6691fae8bb2"
   integrity sha512-xN8h9+0Ua/tsZFOLbbN07aFOhJAOetzHXa9fkk7HVE/lexCeoyv0TmdQn44e+kJ55ML46vfEvZrdwb3Rv+xd8Q==
   dependencies:
     "@types/node" "^14.14.16"

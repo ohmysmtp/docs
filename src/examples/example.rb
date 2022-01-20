@@ -2,7 +2,7 @@ require 'net/http'
 require 'uri'
 require 'json'
 
-uri = URI.parse('https://app.ohmysmtp.com/api/v1/send')
+uri = URI.parse('https://app.mailpace.com/api/v1/send')
 request = Net::HTTP::Post.new(uri)
 request.content_type = 'application/json'
 request['Accept'] = 'application/json'
@@ -11,7 +11,7 @@ request.body = JSON.dump(
   {
     'from' => 'SOMEONE@google.com',
     'to' => 'SOMEONE@SOMEWHERE.com',
-    'subject' => 'Hello from OhMySMTP.com',
+    'subject' => 'Hello from MailPace.com',
     'textbody' => 'HTML Body is auto-generated'
   }
 )

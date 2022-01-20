@@ -1,5 +1,5 @@
 {
-  "name": "oms-docs",
+  "name": "mailpace-docs",
   "version": "0.0.0",
   "private": true,
   "scripts": {
@@ -11,7 +11,7 @@
   "dependencies": {
     "@docusaurus/core": "^2.0.0-beta.8",
     "@docusaurus/preset-classic": "^2.0.0-beta.8",
-    "@ohmysmtp/ohmysmtp.js": "^0.0.11",
+    "@mailpace/mailpace.js": "^0.0.11",
     "classnames": "^2.3.1",
     "docusaurus-plugin-typedoc": "^0.16.3",
     "react": "^17.0.2",

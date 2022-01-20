@@ -6,7 +6,7 @@ sidebar_label: Overview
 
 ## Overview
 
-Our API is a simple HTTPS API, hosted at `https://app.ohmysmtp.com/api/`
+Our API is a simple HTTPS API, hosted at `https://app.mailpace.com/api/`
 
 Send a request using any HTTP library you like, including the right headers and your email details as the body, and we'll let you know if the email was added to the queue successfully or not, through standard HTTP status codes.
 
@@ -14,7 +14,7 @@ Send a request using any HTTP library you like, including the right headers and 
 
 We like to keep it simple, and only have one endpoint:
 
-[https://app.ohmysmtp.com/api/v1/send](send)
+[https://app.mailpace.com/api/v1/send](send)
 
 ## Versioning
 

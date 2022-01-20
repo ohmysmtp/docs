@@ -19,7 +19,7 @@ Find your application's SMTP configuration settings and use the following option
 
 | Option      | Setting    | Details |
 | :------------- | :---------- |  :------ |
-| SMTP Server | ```smtp.ohmysmtp.com``` | Sometimes called Host Address or similar |
+| SMTP Server | ```smtp.mailpace.com``` | Sometimes called Host Address or similar |
 | SMTP Port | `25`, `587`, or `2525` | It doesn't matter which one you pick |
 | Encryption | `TLS` or `STARTTLS` | No encryption or other options will work but it is not recommended. If this setting is unavailable, that's fine |
 | Authentication | `PLAIN` or `LOGIN` | You may only have an option to enable this without any choices, in that case it will work fine |
@@ -30,7 +30,7 @@ That's all you need. You can continue sending emails through your application's 
 
 ## Tags
 
-OhMySMTP supports tagging emails for later categorization and analysis in the UI. To do this over SMTP you need to set a Header on the email, using the email software you're using to send the message. The header name should be `X-OMS-Tags` and the content either a single string or comma separated list of strings, as follows:
+MailPace supports tagging emails for later categorization and analysis in the UI. To do this over SMTP you need to set a Header on the email, using the email software you're using to send the message. The header name should be `X-OMS-Tags` and the content either a single string or comma separated list of strings, as follows:
 
 ```
 X-OMS-Tags: a single tag
@@ -44,7 +44,7 @@ X-OMS-Tags: tag one, tag two, tag three
 
 ## List-Unsubscribe
 
-OhMySMTP supports adding a `List-Unsubscribe` header to emails to allow mail clients to display an Unsubscribe link in the client. To include the header, supply the URI and/or mailto details as a header named `X-List-Unsubscribe`
+MailPace supports adding a `List-Unsubscribe` header to emails to allow mail clients to display an Unsubscribe link in the client. To include the header, supply the URI and/or mailto details as a header named `X-List-Unsubscribe`
 
 ```
 X-List-Unsubscribe: <http://www.host.com/list.cgi?cmd=unsub&lst=list>, <mailto:list-request@host.com?subject=unsubscribe>

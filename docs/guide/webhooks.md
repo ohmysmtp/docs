@@ -4,13 +4,13 @@ title: Webhooks
 sidebar_label: Webhooks
 ---
 
-We can send optional Webhooks (HTTPS POST requests) to an endpoint of your choice when certain events happen in the OhMySMTP API.
+We can send optional Webhooks (HTTPS POST requests) to an endpoint of your choice when certain events happen in the MailPace API.
 
 To set this up, open the Webhooks section of your Domain. Here you can add or remove endpoints and see recently sent webhooks.
 
 > Note that endpoint URLs must use TLS/SSL, and start with `https://`
 
-Webhooks are sent as JSON POST requests, with a Content-Type of `application/json`, and are signed using an Ed25519 signature available in the `X-OhMySMTP-Signature` header key.
+Webhooks are sent as JSON POST requests, with a Content-Type of `application/json`, and are signed using an Ed25519 signature available in the `X-MailPace-Signature` header key.
 
 ## Events
 
@@ -46,7 +46,7 @@ All webhook event bodies have two properties:
 `bcc` | String | Blind Carbon Copy email address, may be a comma separated list if multiple recipients provided| Yes |
 `subject` | String | Email subject | Yes |
 `replyto` | String | Reply to address | Yes |
-`message_id` | String | Message ID set by OhMySMTP, in the format `<message-id>@<mailer.ohmysmtp.com>` | No |
+`message_id` | String | Message ID set by MailPace, in the format `<message-id>@<mailer.mailpace.com>` | No |
 `list_unsubscribe` | String | List-Unsubscribe header | Yes |
 
 *Properties that are marked as nullable are optional and will appear as `null` in the body if undefined*
@@ -79,11 +79,11 @@ All webhook event bodies have two properties:
 
 ## Verification
 
-For added security we sign all webhook requests with an [Ed25519](https://datatracker.ietf.org/doc/html/rfc8032) keypair and place the signature of the webhook body into the request headers, under the header name `X-OhMySMTP-Signature`.
+For added security we sign all webhook requests with an [Ed25519](https://datatracker.ietf.org/doc/html/rfc8032) keypair and place the signature of the webhook body into the request headers, under the header name `X-MailPace-Signature`.
 
-You can validate this signature using the public key available in the `Webhooks -> Public Key Verification` section of your Domain at https://app.ohmysmtp.com. Note that each domain has a different keypair.
+You can validate this signature using the public key available in the `Webhooks -> Public Key Verification` section of your Domain at https://app.mailpace.com. Note that each domain has a different keypair.
 
-This is useful to ensure that all received webhooks have come from the OhMySMTP servers and have not been tampered with. Only we have the private key to sign requests, so if the request body verifies successfully you know we have sent it.
+This is useful to ensure that all received webhooks have come from the MailPace servers and have not been tampered with. Only we have the private key to sign requests, so if the request body verifies successfully you know we have sent it.
 
 :::caution 
 Both the key and signature are a byte string that has been Base64 encoded, using strict_encode. You will need to decode both key and signature to the byte string before verifying (as shown in the examples below). We do this to make sending the signature and key over HTTPS easier and less error-prone.
@@ -97,10 +97,10 @@ Both the key and signature are a byte string that has been Base64 encoded, using
 require "ed25519"
 
 # Assuming you have the headers available in a headers array
-signature_base64 = headers["X-OhMySMTP-Signature"]
+signature_base64 = headers["X-MailPace-Signature"]
 signature = Base64.strict_decode64(signature_base_64)
 
-verify_key_base64 = "Your Public Key from app.ohmysmtp.com here"
+verify_key_base64 = "Your Public Key from app.mailpace.com here"
 verify_key = Ed25519::VerifyKey.new(Base64.strict_decode64(verify_key_base64))
 
 # Assuming the full body of the request is available under a request object

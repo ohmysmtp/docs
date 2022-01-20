@@ -6,7 +6,7 @@ sidebar_label: Authentication
 
 ## Authenticating Requests
 
-Authenticating with the OhMySMTP API is simple and easy to do with all HTTP libraries, all you need to do is provide a single header in your HTTP POST request, called `OhMySMTP-Server-Token` containing your API token
+Authenticating with the MailPace API is simple and easy to do with all HTTP libraries, all you need to do is provide a single header in your HTTP POST request, called `MailPace-Server-Token` containing your API token
 
 ## API Tokens
 
@@ -34,11 +34,11 @@ import TabItem from '@theme/TabItem';
   <TabItem value="curl">
 
   ```bash
-  curl "https://app.ohmysmtp.com/api/v1/send" \
+  curl "https://app.mailpace.com/api/v1/send" \
       -X POST \
       -H "Accept: application/json" \
       -H "Content-Type: application/json" \
-      -H "OhMySMTP-Server-Token: TOKEN_GOES_HERE"
+      -H "MailPace-Server-Token: TOKEN_GOES_HERE"
 
   ```
 
@@ -51,7 +51,7 @@ import TabItem from '@theme/TabItem';
   var headers = {
       'Accept': 'application/json',
       'Content-Type': 'application/json',
-      'OhMySMTP-Server-Token': 'TOKEN_GOES_HERE'
+      'MailPace-Server-Token': 'TOKEN_GOES_HERE'
   };
 
   ```

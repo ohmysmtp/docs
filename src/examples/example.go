@@ -16,7 +16,7 @@ func main() {
 	data := Payload{
 		From: "SOMEONE@google.com",
     To: "SOMEONE@SOMEWHERE.com",
-    Subject:  "Hello from OhMySMTP.com",
+    Subject:  "Hello from MailPace.com",
     Textbody: "HTML Body is auto-generated",
 	}
 	payloadBytes, err := json.Marshal(data)
@@ -25,7 +25,7 @@ func main() {
 	}
 	body := bytes.NewReader(payloadBytes)
 
-	req, err := http.NewRequest("POST", "https://app.ohmysmtp.com/api/v1/send", body)
+	req, err := http.NewRequest("POST", "https://app.mailpace.com/api/v1/send", body)
 	if err != nil {
 		// handle err
 	}
