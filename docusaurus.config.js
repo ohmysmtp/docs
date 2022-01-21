@@ -64,8 +64,8 @@ module.exports = {
       additionalLanguages: ['ruby'],
     },
     algolia: {
-      appId: 'DDZLB5QA5I',
-      apiKey: '6e7c8f1964c37bfa72a1904c105c1f84',
+      appId: 'IPOJTJ7E3U',
+      apiKey: 'e144c2911e4206df82e66c3b2c2c7447',
       indexName: 'mailpace',
 
       // Optional: see doc section bellow
