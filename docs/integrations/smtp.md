@@ -30,16 +30,16 @@ That's all you need. You can continue sending emails through your application's 
 
 ## Tags
 
-MailPace supports tagging emails for later categorization and analysis in the UI. To do this over SMTP you need to set a Header on the email, using the email software you're using to send the message. The header name should be `X-OMS-Tags` and the content either a single string or comma separated list of strings, as follows:
+MailPace supports tagging emails for later categorization and analysis in the UI. To do this over SMTP you need to set a Header on the email, using the email software you're using to send the message. The header name should be `X-MailPace-Tags` and the content either a single string or comma separated list of strings, as follows:
 
 ```
-X-OMS-Tags: a single tag
+X-MailPace-Tags: a single tag
 ```
 
 or
 
 ```
-X-OMS-Tags: tag one, tag two, tag three
+X-MailPace-Tags: tag one, tag two, tag three
 ```
 
 ## List-Unsubscribe
