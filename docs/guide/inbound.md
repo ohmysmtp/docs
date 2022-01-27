@@ -1,7 +1,7 @@
 ---
 id: inbound
 title: Receiving Inbound Emails
-sidebar_label: Inbound
+sidebar_label: Inbound Emails
 ---
 
 ## Overview
