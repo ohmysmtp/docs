@@ -10,7 +10,7 @@ slug: /
 MailPace provides an HTTPS API, SMTP Server and several libraries for sending emails that completely removes the need for any email setup or active email management. Emails sent through the MailPace API can come from any address for any domain that you are able to verify ownership of through a simple DNS update.
 
 :::info
-MailPace used to be called OhMySMTP. Check out our [handover guide](../guide/moving_from_ohmysmtp) if you have any questions.
+Until January 2022, MailPace was known as OhMySMTP. Check out our [handover guide](../guide/moving_from_ohmysmtp) if you have any questions.
 :::
 
 - **MailPace can only be used for Transactional Email**. Sending marketing emails, bulk newsletters or other non-transactional content is strictly prohibited. Contact support if you need more details about whether your email is considered transactional or not
