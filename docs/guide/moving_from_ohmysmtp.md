@@ -27,6 +27,13 @@ sidebar_label: Moving from OhMySMTP
 | SMTP Domain | https://smtp.ohmysmtp.com | https://smtp.mailpace.com | The existing SMTP route will continue to work indefinitely|
 | Tags header name | `X-OhMySMTP-Tags` | `X-MailPace-Tags` | The old tags header will be supported indefinitely  |
 
+### Your DNS Settings
+
+| Record      | Old      | New    | Comments |
+| :------------- | :------------- | :---------- |  :------ |
+| DKIM Selector | `ohmysmtp._domainkey<.your-subdomain>` | `ohmysmtp._domainkey<.your-subdomain>`  | To avoid breaking DKIM signing this stays the same |
+| Advanced Verification - CNAME  | `mailer.ohmysmtp.com` | mailer.ohmysmtp.com | To avoid breaking rDNS lookups this stays the same  |
+| Inbound CNAME | `inbound.ohmysmtp.com` | inbound.mailpace.com | Inbound emails will continue to work through the old record indefinitely |
 
 ### Libraries
 
